@@ -1,4 +1,5 @@
-#!/bin/bash
-sudo yum install httpd -y
-sudo chkconfig httpd on
-sudo systemctl start httpd
+#!binbash
+sudo yum update -y
+sudo amazon-linux-extras install nginx1 -y
+sudo amazon-linux-extras enable nginx1
+sudo systemctl start nginx
