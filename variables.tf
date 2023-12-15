@@ -12,5 +12,5 @@ variable "AMI" {
 }
 
 variable "PUBLIC_KEY_PATH" {
-    default = "/root/.ssh/authorized_keys"
+    default = "/home/ec2-user/oregon-region-key-pair.pub"
 }
