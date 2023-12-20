@@ -1,14 +1,15 @@
 terraform{
+  required_version = ">= 0.15"
   required_providers {
     aws = {
-      source = "hashicrop/aws"
-      version = "5.6.2"
+      source  = "hashicorp/aws"
+      version = ">=4"
      }
     }
 
 # scenario 2 - using "s3" backend
    backend "s3" {
-      bucket        = "praveenterraform"
+      bucket        = "testterraforms3"
       region        = "us-west-2"
      }
 }
